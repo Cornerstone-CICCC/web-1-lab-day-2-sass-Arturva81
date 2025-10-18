@@ -1,0 +1,106 @@
+.back-to-top-btn * {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  background-color: black;
+  color: #ffffff;
+  border: none;
+  padding: 1rem;
+  z-index: 1000;
+}
+
+header {
+  background-color: #feff00;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: flex-start;
+  margin-top: 0.5rem;
+  padding: 0;
+}
+
+h2 {
+  background-color: #00fffd;
+  margin-bottom: 1rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+figure img {
+  height: 20rem;
+  display: block;
+}
+
+figure {
+  position: relative;
+  overflow: hidden;
+}
+
+figcaption {
+  position: absolute;
+  bottom: 18rem;
+  left: 0;
+  right: 0;
+  background-color: red;
+  color: #ffffff;
+  padding: 0.5rem;
+  text-align: center;
+  opacity: 0;
+  width: 30rem;
+}
+
+figure img:hover + figcaption {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  margin-top: 5.5rem;
+  padding: 0.5rem;
+}
+
+main section h2 {
+  position: sticky;
+  top: 6.3rem;
+  z-index: 900;
+  margin: 0;
+  padding: 0.5rem 0;
+}
+
+/*# sourceMappingURL=styles.css.map */

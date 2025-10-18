@@ -1,0 +1,25 @@
+@use 'backButton';
+@use 'header';
+@use 'gallerys';
+@use 'information';
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin-top: 5.5rem; 
+    padding: .5rem;
+}
+
+main section h2 {
+  position: sticky;
+  top: 6.3rem;
+  z-index: 900;
+  margin: 0;
+  padding: 0.5rem 0;
+}
+

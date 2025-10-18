@@ -1,0 +1,27 @@
+figure img {
+    height: 20rem;
+    display: block;
+}
+
+figure {
+    position: relative;
+    overflow: hidden;
+}
+
+figcaption {
+    position: absolute;
+    bottom: 18rem;
+    left: 0;
+    right: 0;
+    background-color: red;
+    color: #ffffff;
+    padding: 0.5rem;
+    text-align: center;
+    opacity: 0;
+    width: 30rem;
+}
+
+figure img:hover + figcaption {
+  opacity: 1;
+  transform: translateY(0);
+} 
